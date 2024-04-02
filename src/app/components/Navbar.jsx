@@ -109,6 +109,7 @@ function Navbar() {
                 Yangi kinolar
                 <span className="badge">New</span>
               </Link>
+              <Link href="/invest">Sarmoya qilish :)</Link>
             </li>
           </ul>
         </div>
