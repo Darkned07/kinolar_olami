@@ -7,9 +7,10 @@ import KinoId from "./KinoId";
 function kinoLi({ slug }) {
   const [docs, setDocs] = useState(null);
   const [size, setSize] = useState();
-  const loc = JSON.parse(localStorage.getItem("kino"));
+  
 
   useEffect(() => {
+    const loc = JSON.parse(localStorage.getItem("kino"));
     const idFilt = (id) => {
       const fil = loc.filter((f) => f.id === id);
       setDocs(fil);

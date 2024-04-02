@@ -1,11 +1,13 @@
 "use client";
 import Link from "next/link";
-import React from "react";
+import { useEffect } from "react";
 import { useCollection } from "../hooks/useCollection";
 
 function KinoList() {
   const { document } = useCollection();
-  localStorage.setItem("kino", JSON.stringify(document));
+  useEffect(() => {
+    localStorage.setItem("kino", JSON.stringify(document));
+  }, [document]);
 
   return (
     <div className="flex flex-col gap-3">

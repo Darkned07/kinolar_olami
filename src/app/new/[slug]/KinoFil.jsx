@@ -7,8 +7,9 @@ import KinoNew from "./KinoNew";
 function KinoFil({ slug }) {
   const [doc, setDoc] = useState(null);
   const [size, setSize] = useState();
-  const loc = JSON.parse(localStorage.getItem("kino"));
+
   useEffect(() => {
+    const loc = JSON.parse(localStorage.getItem("kino"));
     const time = new Date().toDateString();
     const newMult = (m) => {
       const filt = loc;
@@ -33,7 +34,11 @@ function KinoFil({ slug }) {
       newPrem(time);
     }
   }, [slug]);
-  return slug == "multfilmlar" ? <KinoMult doc={doc} size={size} /> : <KinoNew doc={doc} size={size} />;
+  return slug == "multfilmlar" ? (
+    <KinoMult doc={doc} size={size} />
+  ) : (
+    <KinoNew doc={doc} size={size} />
+  );
 }
 
 export default KinoFil;
