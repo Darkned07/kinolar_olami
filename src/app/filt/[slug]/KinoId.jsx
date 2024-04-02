@@ -1,4 +1,4 @@
-import React from "react";
+
 import Link from "next/link";
 import YouTube from "react-youtube";
 
@@ -14,7 +14,7 @@ function KinoId({ doc }) {
     event.target.pauseVideo();
   };
 
-  console.log("id", doc);
+ 
 
   return (
     <div>
@@ -30,7 +30,7 @@ function KinoId({ doc }) {
                   <div className="card-body">
                     <h2 className="card-title">{s.name}</h2>
                     <div className="flex flex-col gap-2 mt-[10px]">
-                      <span className="flex flex-row gap-2 font-bold">
+                      <span className="flex flex-wrap gap-2 font-bold">
                         Janri:
                         <span className="flex capitalize flex-wrap gap-1 font-normal">
                           {s.janri.map((l) => {

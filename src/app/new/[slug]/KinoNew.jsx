@@ -1,7 +1,7 @@
 import Link from "next/link";
 import YouTube from "react-youtube";
 
-function KinoSlug({ doc, size }) {
+function KinoNew({ doc, size }) {
   const opts = {
     height: "390",
     width: "100%",
@@ -12,7 +12,6 @@ function KinoSlug({ doc, size }) {
   const onReady = (event) => {
     event.target.pauseVideo();
   };
-
   return (
     <div>
       <ul className="flex flex-col gap-5">
@@ -88,4 +87,4 @@ function KinoSlug({ doc, size }) {
   );
 }
 
-export default KinoSlug;
+export default KinoNew;

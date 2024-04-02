@@ -1,5 +1,3 @@
-import React from "react";
-
 function Filter() {
   return (
     <div className="w-full">
@@ -9,7 +7,7 @@ function Filter() {
           <input
             type="text"
             className="grow"
-            placeholder="kino nomini yozing..."
+            placeholder="kino qidirish ishlamayabdi"
           />
         </label>
         <button className="btn btn-outline ">Kino qidirish</button>
