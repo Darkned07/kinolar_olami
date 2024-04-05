@@ -4,7 +4,7 @@ function page() {
       <div className="flex  place-content-center w-full border  border-secondary rounded-xl  py-5 px-2">
         <div className="flex flex-col gap-3 items-center justify-center">
           <h2 className=" text-[20px] text-center">
-            Saytni qollab quvvatlamoqchi bolsangiz paastdagi ushbu xamyonlarga
+            Saytni qollab quvvatlamoqchi bolsangiz pastdagi ushbu xamyonlarga
             tolov qilishingiz mumkun bu ish majburiy emas hamma o'z konglidan
             chiqarib tashlashi mumkun tashlaganlar uchun raxmat
           </h2>
